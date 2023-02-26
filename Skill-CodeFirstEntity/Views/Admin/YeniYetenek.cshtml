@@ -1,0 +1,20 @@
+﻿@model Skill_CodeFirstEntity.Models.siniflar.YETENEKLER
+@{
+    ViewBag.Title = "YeniYetenek";
+    Layout = "~/Views/Shared/_LayoutNavBar.cshtml";
+}
+
+
+<form class="form-group" method="post">
+    <div style=" margin-bottom:20px">
+        <label>Skill Description</label>
+        @Html.TextBoxFor(x => x.ACIKLAMA, new { @class = "form-control" })
+    </div>
+    <div style=" margin-bottom:20px">
+        <label>Skill Value</label>
+        @Html.TextBoxFor(x => x.DEGER, new { @class = "form-control" })
+    </div>
+    <div>
+        <button class="btn btn-primary">Add</button>
+    </div>
+</form>
